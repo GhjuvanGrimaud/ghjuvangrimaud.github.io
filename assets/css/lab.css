@@ -1,0 +1,58 @@
+.lab-hero {
+  padding: 2.5rem 0 2rem;
+  max-width: 900px;
+}
+
+.lab-kicker {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-bottom: 0.8rem;
+}
+
+.lab-hero h1 {
+  font-size: clamp(2.1rem, 5vw, 4.3rem);
+  line-height: 1.04;
+  margin: 0 0 1.2rem;
+  max-width: 900px;
+}
+
+.lab-lead {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  max-width: 760px;
+}
+
+.lab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+
+.lab-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.2rem 0 2.2rem;
+}
+
+.lab-card,
+.person-card {
+  border: 1px solid rgba(127, 127, 127, 0.22);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.lab-card h3,
+.person-card h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+}
